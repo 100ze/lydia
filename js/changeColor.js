@@ -1,6 +1,6 @@
 // variables
-// colors
-var _colors = [
+let _body = document.querySelector("body");
+let _colors = [
     "#596e65",
     "#405761",
     "#723812",
@@ -34,4 +34,8 @@ function _chooseColor(){
   ); 
 
   return _colors[index]
+}
+
+function changeColor(){
+  _body.style.backgroundColor = _chooseColor();
 }
